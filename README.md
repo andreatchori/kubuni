@@ -1,4 +1,4 @@
-# kubuni
+# Kubuni
 
 ## Build Setup
 

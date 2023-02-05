@@ -1,22 +1,33 @@
 {
-  "name": "kubuni",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0"
-  }
+    "name": "kubuni",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "bootstrap": "4.6.1",
+        "bootstrap-vue": "2.21.2",
+        "core-js": "^3.25.3",
+        "mixitup": "^3.3.1",
+        "@nuxtjs/style-resources": "^1.2.1",
+        "nuxt": "^2.15.8",
+        "vue": "^2.7.10",
+        "vue-server-renderer": "^2.7.10",
+        "vue-template-compiler": "^2.7.10",
+        "swiper": "^5.4.5",
+        "vue-awesome-swiper": "^4.1.1",
+        "vue-fixed-header": "^3.2.15",
+        "vue-masonry": "^0.13.0",
+        "vue-masonry-css": "^1.0.3",
+        "vue-silentbox": "^2.4.5",
+        "vuejs-paginate": "^2.1.0"
+    },
+    "devDependencies": {
+        "@nuxt/types": "^2.15.8",
+        "@nuxt/typescript-build": "^2.1.0"
+    }
 }
