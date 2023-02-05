@@ -24,10 +24,11 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [
-        'assets/scss/style.scss',
-    ],
+    css: [],
 
+    router: {
+        linkExactActiveClass: 'active-link',
+    },
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
         '~/plugins/vue-awesome-swiper.js',
@@ -45,6 +46,7 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/typescript
         '@nuxt/typescript-build',
+        '@nuxtjs/style-resources'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,7 +57,8 @@ export default {
 
     styleResources: {
         scss: [
-            'assets/scss/default/_variables.scss'
+            '~/assets/scss/style.scss',
+            '~/assets/scss/default/_variables.scss'
         ]
     },
 
