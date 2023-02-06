@@ -1,9 +1,3 @@
-/* ======================
-Font Variation 
-========================*/
-
-
-
 @for $i from 1 through length($fontList) {
     body.template-font-#{$i} {
         .heading,
@@ -21,72 +15,28 @@ Font Variation
         .h6 {
             font-family: nth($fontList, $i);
         }
-
-        .heading{
-            &.font-reenie{
+        .heading {
+            &.font-reenie {
                 font-family: 'Reenie Beanie', cursive;
             }
         }
-
-        // Minicart
-        /* & .mini-cart {
-            .shopping-cart {
-                .shop-inner {
-                    ul {
-                        &.product-list {
-                            li {
-                                .content {
-                                    .inner {
-                                        h4 {
-                                            font-family: nth($fontList, $i);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        } */
-
-
-        .mega__width--fullscreen{
-            .mega__list{
-                li{
-                    a{
-                        span{
+        .mega__width--fullscreen {
+            .mega__list {
+                li {
+                    a {
+                        span {
                             font-family: nth($fontList, $i);
                         }
                     }
                 }
             }
-        }  
-        // Mainmenu
-        .mainmenu-wrapper{
-            .page_nav{
-                ul{
-                    &.mainmenu{
-                        li{
-                            &.lavel-1{
-                                > a{
-                                    span{
-                                        font-family: nth($fontList, $i);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }  
-
-        // Footer Font
-        .footer-widget{
-            .footer-menu{
-                ul{
-                    &.ft-menu-list{
-                        li{
-                            a{
+        }
+        .footer-widget {
+            .footer-menu {
+                ul {
+                    &.ft-menu-list {
+                        li {
+                            a {
                                 font-family: nth($fontList, $i);
                             }
                         }
@@ -94,84 +44,73 @@ Font Variation
                 }
             }
         }
-       
-
-        // Copyright
-        .copyright{
-            ul{
-                &.bk-copyright-menu{
-                    li{
-                        a{
+        .copyright {
+            ul {
+                &.bk-copyright-menu {
+                    li {
+                        a {
                             font-family: nth($fontList, $i);
                         }
                     }
                 }
             }
         }
-        
-        .copyright{
-            .copyright-right{
-                p{
+        .copyright {
+            .copyright-right {
+                p {
                     font-family: nth($fontList, $i);
                 }
             }
-        }  
-
+        }
         .footer-widget {
             .footer-address {
                 p {
                     font-family: nth($fontList, $i);
                 }
             }
-        }  
-
+        }
         .form-style--1 {
             .input-box {
-                input ,
+                input,
                 textarea {
                     font-family: nth($fontList, $i);
                 }
             }
-        } 
-        
-        .testimonial_style--1{
-            .content{
+        }
+        .testimonial_style--1 {
+            .content {
                 p {
                     font-family: nth($fontList, $i);
                 }
-                .testimonial-info{
-                    .clint-info{
-                        span{
+                .testimonial-info {
+                    .clint-info {
+                        span {
                             font-family: nth($fontList, $i);
                         }
                     }
                 }
             }
-        }  
-        
-        .service{
-            &.service--1{
-                .content{
-                    p{
+        }
+        .service {
+            &.service--1 {
+                .content {
+                    p {
                         font-family: nth($fontList, $i);
                     }
                 }
             }
         }
-       
-        .service{
-            &.service--2{
-                .content{
-                    h4{
+        .service {
+            &.service--2 {
+                .content {
+                    h4 {
                         font-family: nth($fontList, $i);
                     }
-                    p{
+                    p {
                         font-family: nth($fontList, $i);
                     }
                 }
             }
-        } 
+        }
     }
 }
-
-

@@ -19,12 +19,14 @@ export default {
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-png', href: '/logo--kubuni.png' }
         ]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: [
+        '~/assets/scss/style.scss'
+    ],
 
     router: {
         linkExactActiveClass: 'active-link',
@@ -57,7 +59,6 @@ export default {
 
     styleResources: {
         scss: [
-            '~/assets/scss/style.scss',
             '~/assets/scss/default/_variables.scss'
         ]
     },

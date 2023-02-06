@@ -2,56 +2,53 @@
 Counterup Area 
 ----------------------*/
 
+
 /* ---------------------------
     Default Counter Area 
 -----------------------------*/
 
-.counter-fullwidth-grid{
+.counter-fullwidth-grid {
     width: 100%;
     max-width: 100%;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat( 4,1fr);
-    
+    grid-template-columns: repeat( 4, 1fr);
     @media #{$md-layout} {
         grid-template-columns: repeat(2, 1fr);
     }
-
     @media #{$sm-layout} {
         grid-template-columns: repeat(2, 1fr);
     }
-
     @media #{$large-mobile} {
         grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 
-.brook-counter{
-    .icon{
+.kubuni-counter {
+    .icon {
         line-height: 1;
         margin-bottom: 32px;
-        i{
+        i {
             font-size: 80px;
             color: $theme-color;
         }
     }
-    .content{
-        span{
+    .content {
+        span {
             margin-bottom: 29px;
             font-size: 48px;
             font-weight: 700;
             color: $heading-color;
             display: block;
         }
-        h6{
+        h6 {
             font-size: 16px;
             font-weight: 600;
             line-height: 1.5;
             color: $body-color;
         }
     }
-    &.counter-with-border{
+    &.counter-with-border {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -63,40 +60,34 @@ Counterup Area
         border: 1px solid #ddd;
         padding: 40px;
         justify-content: center;
-        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-        transition: all .3s cubic-bezier(.645,.045,.355,1);
-
+        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
         @media #{$lg-layout, $md-layout} {
             padding: 63px 30px;
         }
-
-
-        &::before{
+        &::before {
             content: "";
             padding-top: 100%;
         }
-        &:hover{
+        &:hover {
             border: 30px solid $theme-color;
-            
             @media #{$lg-layout, $md-layout, $sm-layout} {
                 border: 5px solid #0038E3;
             }
         }
     }
-
-    &.onepage-counter{
-        .content{
-            span{
+    &.onepage-counter {
+        .content {
+            span {
                 margin-bottom: 21px;
                 font-size: 80px;
                 font-weight: 600;
                 line-height: .9;
-                
                 @media #{$sm-layout} {
                     font-size: 60px;
                 }
             }
-            h6{
+            h6 {
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 1.5;
@@ -104,34 +95,34 @@ Counterup Area
             }
         }
     }
-
-
-    &.product-count{
-        .icon{
-            i{
+    &.product-count {
+        .icon {
+            i {
                 font-size: 80px;
             }
         }
-        .content{
-            span{
+        .content {
+            span {
                 margin-bottom: 30px;
             }
         }
     }
 }
 
-.counterup-bg-shape{
+.counterup-bg-shape {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom 200px;
 }
 
+
 /* -------------------
 Counterup Area 
 ----------------------*/
-.number-speaks{
-    .content{
-        h3{
+
+.number-speaks {
+    .content {
+        h3 {
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 1px;
@@ -141,7 +132,7 @@ Counterup Area
             word-wrap: break-word;
             font-family: $body-font;
         }
-        h2{
+        h2 {
             font-size: 48px;
             line-height: 1.25;
             font-weight: 700;
@@ -150,7 +141,7 @@ Counterup Area
             max-width: 100%;
             color: #222222;
             margin-top: 38px;
-            span{
+            span {
                 color: $secondary-color;
             }
             // res
@@ -159,25 +150,22 @@ Counterup Area
                 margin-top: 20px;
             }
         }
-        a{
-            &.bk-btn{
+        a {
+            &.bk-btn {
                 margin-top: 40px;
             }
         }
-        
     }
 }
 
-
-.number-wrap{
+.number-wrap {
     display: flex;
     flex-wrap: wrap;
     // res
     @media #{$sm-layout} {
         display: block;
     }
-
-    span{
+    span {
         font-size: 70px;
         font-weight: 700;
         line-height: .9;
@@ -189,7 +177,7 @@ Counterup Area
             font-size: 50px;
         }
     }
-    .content{
+    .content {
         padding-left: 20px;
         text-align: left;
         max-width: 66.66667%;
@@ -199,7 +187,7 @@ Counterup Area
             padding-left: 0;
             margin-top: 30px;
         }
-        h6{
+        h6 {
             font-size: 18px;
             line-height: 1.39;
             margin-bottom: 0;
@@ -207,7 +195,7 @@ Counterup Area
             font-family: $body-font;
             font-weight: 600;
         }
-        p{
+        p {
             margin-top: 20px;
             font-family: $heading-font;
             line-height: 1.32;
@@ -215,48 +203,43 @@ Counterup Area
             margin-bottom: 0;
             color: #333;
         }
-
     }
 }
-
 
 
 /* ==========================
     Conter Style 2 
 ===========================*/
 
-.counter-grid{
-    grid-template-columns: repeat( 3,1fr);
+.counter-grid {
+    grid-template-columns: repeat( 3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 50px;
     width: 100%;
     max-width: 100%;
     display: -ms-grid;
     display: grid;
-
     @media #{$sm-layout} {
         grid-template-columns: repeat(2, 1fr);
     }
-
     @media #{$small-mobile} {
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
 
-.counter-style--2{
+.counter-style--2 {
     text-align: center;
-    .icon{
+    .icon {
         font-size: 80px;
         line-height: 1;
         display: block;
         margin-bottom: 10px;
-        i{
+        i {
             font-size: 80px;
             color: #FE378C;
         }
     }
-    .count{
+    .count {
         font-size: 48px;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
@@ -264,8 +247,8 @@ Counterup Area
         line-height: 1.6;
         color: #fff;
     }
-    .content{
-        h6{
+    .content {
+        h6 {
             font-size: 15px;
             font-weight: 500;
             font-style: italic;
@@ -276,19 +259,3 @@ Counterup Area
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

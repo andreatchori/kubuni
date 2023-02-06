@@ -46,7 +46,6 @@
 =================================*/
 
 @import 'components/breadcrumb';
-@import 'components/popup';
 @import 'components/typography';
 @import 'components/list';
 @import 'components/icon-boxes';
@@ -63,13 +62,10 @@
 @import 'template/header';
 @import 'template/sidebar-header';
 @import 'template/feature';
-@import 'template/hamber-menu';
 @import 'template/left-vertical-header';
 @import 'template/fullscreen-slider';
-@import 'template/sidebar-mobilemenu';
 @import 'template/onepage';
 @import 'template/portfolio-slide';
-@import 'template/photo-slide';
 @import 'template/vertical-slide';
 @import 'template/presentation';
 @import 'template/footer';
@@ -80,5 +76,4 @@
 
 @import 'color/color-two';
 @import './color/font-variation';
-@import 'color/preview';
 @import 'color/responsive';

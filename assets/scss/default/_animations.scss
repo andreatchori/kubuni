@@ -2,6 +2,7 @@
 Animation Css
 ============================*/
 
+
 /* -----------------------------------
     Custom Animation For All Page
 ---------------------------------------*/
@@ -21,7 +22,6 @@ Animation Css
     }
 }
 
-
 @-webkit-keyframes moveHorizontal {
     to {
         -webkit-transform: translateX(0);
@@ -37,14 +37,11 @@ Animation Css
     }
 }
 
-
-
-
 .move-up {
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
-    &.animate{
+    &.animate {
         -webkit-transform: translateY(100px);
         -ms-transform: translateY(100px);
         transform: translateY(100px);
@@ -53,12 +50,11 @@ Animation Css
     }
 }
 
-
 .move-up-x {
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);
     transform: translateX(0px);
-    &.animate{
+    &.animate {
         -webkit-transform: translateX(100px);
         -ms-transform: translateX(100px);
         transform: translateX(100px);
@@ -76,7 +72,6 @@ Animation Css
     0% {
         margin-top: -100px
     }
-
     to {
         margin-top: 0
     }
@@ -86,7 +81,6 @@ Animation Css
     0% {
         margin-top: -100px
     }
-
     to {
         margin-top: 0
     }
@@ -180,7 +174,6 @@ Animation Css
 }
 
 
-
 /* --------------------------------------
     Custom Slide Out To Left
 ---------------------------------------*/
@@ -210,24 +203,23 @@ Animation Css
 }
 
 
-
-
 /* ------------------------
-    Brook Hover Effect 
+    kubuni Hover Effect 
 ---------------------------*/
 
-.brook-transition{
-    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
+.kubuni-transition {
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
 }
-.bk-hover{
-    a{
+
+.bk-hover {
+    a {
         position: relative;
         overflow: hidden;
         z-index: 1;
         display: inline-block;
         color: #999;
-        &::after{
+        &::after {
             content: "";
             width: 0;
             height: 1px;
@@ -236,19 +228,20 @@ Animation Css
             left: auto;
             right: 0;
             z-index: -1;
-            -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
-            transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+            -webkit-transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+            transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
             background: currentColor;
         }
-        &:hover{
-             &::after{
+        &:hover {
+            &::after {
                 width: 100%;
                 left: 0;
                 right: auto;
-             }
+            }
         }
     }
 }
+
 
 /* ------------------------
     Separator Bounce 
@@ -298,4 +291,3 @@ Animation Css
         transform: translate(0px, 0px);
     }
 }
-

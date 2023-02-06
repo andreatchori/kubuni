@@ -2,42 +2,40 @@
     Icon Boxes 
 ========================*/
 
-.black-bg{
+.black-bg {
     background-color: #000000 !important;
 }
-.black-bg-two{
+
+.black-bg-two {
     background-color: #121618 !important;
 }
-.brook-icon-boxes-area{
-    .space_dec--110{
 
+.kubuni-icon-boxes-area {
+    .space_dec--110 {
         @media #{$md-layout} {
             margin-top: 0;
             // padding-top: 80px;
         }
-
         @media #{$sm-layout} {
             margin-top: 0;
             // padding-top: 80px;
         }
-
     }
 }
 
-.icon-box{
-    &.bg-transparant{
-        .inner{
+.icon-box {
+    &.bg-transparant {
+        .inner {
             background: transparent;
-        }            
+        }
     }
-    .inner{
+    .inner {
         position: relative;
         padding: 60px 35px 64px;
         background: #fff;
         z-index: 2;
-        transition: all .3s cubic-bezier(.645,.045,.355,1);
-        
-        &::before{
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        &::before {
             position: absolute;
             content: "";
             top: 10px;
@@ -49,107 +47,98 @@
             visibility: visible;
             z-index: -1;
         }
-        .icon{
+        .icon {
             font-size: 80px;
             margin-bottom: 22px;
             color: $theme-color;
-
-            &.brown-color{
+            &.brown-color {
                 color: $brown;
             }
         }
-        
-        .svg-icon{
-            .tm-svg{
+        .svg-icon {
+            .tm-svg {
                 padding: 10px 0 12px;
                 width: 60px;
                 margin: 0 auto;
             }
         }
-        .content{
+        .content {
             h5 {
-                &.heading{
+                &.heading {
                     margin-bottom: 18px;
-
                 }
             }
             a {
-                &.icon-btn{
+                &.icon-btn {
                     margin-top: 46px;
                     display: inline-block;
                     color: $heading-color;
-                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-                    transition: all .3s cubic-bezier(.645,.045,.355,1);
-                    span{
+                    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                    span {
                         padding: 5px 0;
                         font-weight: 600;
                         font-size: 14px;
                     }
-                    i{
+                    i {
                         font-size: 12px;
                         color: $theme-color;
                         padding-left: 14px;
                     }
-                    &:hover{
+                    &:hover {
                         color: $theme-color;
                     }
-
-                    &.color-red{
-                        i{
+                    &.color-red {
+                        i {
                             color: $red-color;
                         }
-                        &:hover{
+                        &:hover {
                             color: $red-color;
                         }
                     }
                 }
             }
         }
-        &:hover{
+        &:hover {
             -webkit-transform: translateY(-5px);
             -ms-transform: translateY(-5px);
             transform: translateY(-5px);
-            box-shadow: 0 2px 30px rgba(0,0,0,.1);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, .1);
         }
     }
-
-
-    &.no-border{
-        .inner{
+    &.no-border {
+        .inner {
             padding: 0;
-            &::before{
+            &::before {
                 display: none;
             }
-            &:hover{
+            &:hover {
                 transform: translateY(-5px);
                 box-shadow: inherit;
             }
         }
     }
-    &.with-padding{
-        .inner{
+    &.with-padding {
+        .inner {
             padding: 60px 35px 64px;
-
             @media #{$md-layout} {
                 padding: 14px 21px 21px;
             }
-
             @media #{$sm-layout} {
                 padding: 10px 8px 32px;
             }
         }
     }
-
-    &.icon-box-style-2{
-        & .icon{
+    &.icon-box-style-2 {
+        & .icon {
             flex: 0 0 74px;
             width: 74px;
             height: 74px;
             margin-bottom: 35px;
             margin-right: 35px;
         }
-        & .content{
-            h5{
+        & .content {
+            h5 {
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 1.3;
@@ -159,11 +148,13 @@
     }
 }
 
+
 /* =====================
     Icon Box Style 
 ========================*/
-.icon-grid-box{
-    grid-template-columns: repeat( 3,1fr);
+
+.icon-grid-box {
+    grid-template-columns: repeat( 3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 50px;
     width: 760px;
@@ -171,27 +162,22 @@
     display: grid;
     margin: auto;
     margin-top: 60px;
-
     @media #{$md-layout} {
         width: auto;
     }
-
     @media #{$sm-layout} {
         width: auto;
         grid-row-gap: 30px;
     }
-
     @media #{$large-mobile} {
-        grid-template-columns: repeat( 1,1fr);
+        grid-template-columns: repeat( 1, 1fr);
     }
-
-    .bk-icon{
+    .bk-icon {
         max-width: 160px;
-
         @media #{$large-mobile} {
             max-width: inherit;
         }
-        .icon{
+        .icon {
             font-size: 80px;
             width: 160px;
             height: 160px;
@@ -199,68 +185,64 @@
             border-radius: 50%;
             color: #fff;
             position: relative;
-
             @media #{$sm-layout} {
                 width: 110px;
                 height: 110px;
                 font-size: 50px;
             }
-
-            &.bg-color-1{
+            &.bg-color-1 {
                 background: #e71361;
             }
-            &.bg-color-2{
+            &.bg-color-2 {
                 background: #ecb505;
             }
-            &.bg-color-3{
+            &.bg-color-3 {
                 background: #116cd7;
             }
-
-            i{
+            i {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
         }
     }
 }
 
-.vibrate-style{
-    .icon{
-        & i{
+.vibrate-style {
+    .icon {
+        & i {
             font-size: 30px;
         }
     }
-    & .content{
-        & h5{
+    & .content {
+        & h5 {
             font-size: 20px;
             font-weight: 500;
         }
-        & p{
+        & p {
             font-size: 16px;
             line-height: 1.75;
             color: #777;
             font-weight: 400;
         }
     }
-    &:hover{
-        & .inner{
+    &:hover {
+        & .inner {
             transform: translateY(0px)
         }
     }
 }
 
 // Service SVG Icon Box
-
-.single-svg-icon-box{
+.single-svg-icon-box {
     position: relative;
     height: 100%;
     padding: 37px 30px 34px;
     background: #fff;
-    box-shadow: 0 20px 50px rgba(0,0,0,.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .05);
     z-index: 9;
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -272,7 +254,7 @@
         z-index: 1;
         transition: all 0.3s ease-in-out;
     }
-    & .grid-overlay{
+    & .grid-overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -288,85 +270,83 @@
         z-index: -1;
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
-    & .inner{
+    & .inner {
         position: relative;
         z-index: 5;
     }
-    & .svg-icon{
+    & .svg-icon {
         width: 60px;
         margin-bottom: 22px;
-        & svg{
-            *{
+        & svg {
+            * {
                 stroke: #68AE4A;
             }
         }
     }
-    .content{
-        & h5{
+    .content {
+        & h5 {
             font-size: 20px;
             margin-bottom: 18px;
             font-weight: 500;
-        } 
+        }
     }
-
-
-    &:hover{
+    &:hover {
         background: none;
-        &::before{
+        &::before {
             opacity: 0.5;
         }
-        .grid-overlay{
+        .grid-overlay {
             opacity: 1;
             visibility: visible;
         }
-        & .svg-icon{
-            & svg{
-                *{
+        & .svg-icon {
+            & svg {
+                * {
                     stroke: $white;
                 }
             }
         }
-        .content{
-            h5{
+        .content {
+            h5 {
                 color: $white;
             }
-            p{
+            p {
                 color: $white;
             }
         }
     }
-    &.business-icon-box{
+    &.business-icon-box {
         position: relative;
-        transition: all .3s cubic-bezier(.645,.045,.355,1);
-        & .grid-overlay{
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        & .grid-overlay {
             opacity: 1;
             visibility: visible;
         }
-        & .svg-icon{
+        & .svg-icon {
             text-align: center;
             margin: 0 auto;
             margin-bottom: 22px;
-            transition: all .3s cubic-bezier(.645,.045,.355,1);
-            & svg{
-                *{
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            & svg {
+                * {
                     stroke: $white !important;
                 }
             }
         }
-        .content{
+        .content {
             position: relative;
             z-index: 1;
-            h5{
+            h5 {
                 color: $white;
-                transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
             }
-            p{
+            p {
                 color: $white;
                 font-family: $CerebriSans;
-                transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
             }
         }
-        .br-icon-box-btn{
+        .br-icon-box-btn {
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -382,8 +362,8 @@
             margin: 0;
             padding-right: 0;
             display: block;
-            transition: all .3s cubic-bezier(.645,.045,.355,1);
-            a{
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            a {
                 color: $white;
                 font-size: 13px;
                 font-weight: 500;
@@ -393,35 +373,34 @@
                 display: block;
             }
         }
-
-        &:hover{
+        &:hover {
             background-image: none;
             background: none;
-            box-shadow: 0 0 30px -15px rgba(51,51,51,.25);
+            box-shadow: 0 0 30px -15px rgba(51, 51, 51, .25);
             background: #c75353;
-            &::before{
+            &::before {
                 display: none;
             }
-            & .grid-overlay{
+            & .grid-overlay {
                 opacity: 0;
                 visibility: hidden;
             }
-            & .svg-icon{
+            & .svg-icon {
                 transform: translateY(-50px);
                 opacity: 0;
                 visibility: hidden;
             }
-            & .content{
-                h5{
+            & .content {
+                h5 {
                     transform: translateY(-50px);
                     opacity: 0;
                     visibility: hidden;
                 }
-                p{
+                p {
                     transform: translateY(-75px);
                 }
             }
-            .br-icon-box-btn{
+            .br-icon-box-btn {
                 transform: translate(-50%, 15px);
                 opacity: 1;
                 visibility: visible;
@@ -429,10 +408,3 @@
         }
     }
 }
-
-
-
-
-
-
-

@@ -16,10 +16,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         // res
-        @media #{$lg-layout, $md-layout, $sm-layout}{
+        @media #{$lg-layout, $md-layout, $sm-layout} {
             height: 750px;
         }
-
         &__left {
             position: relative;
             .hero-title {
@@ -29,34 +28,31 @@
                 padding-top: 100px;
                 font-family: $body-font;
                 // res
-                @media #{$lg-layout}{
+                @media #{$lg-layout} {
                     font-size: 80px;
                 }
-                @media #{$md-layout}{
+                @media #{$md-layout} {
                     font-size: 70px;
                 }
-                @media #{$sm-layout}{
+                @media #{$sm-layout} {
                     font-size: 50px;
                 }
             }
         }
-
         &__right {
             position: relative;
             max-width: 470px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
             // res
-            @media #{$md-layout, $sm-layout}{
+            @media #{$md-layout, $sm-layout} {
                 max-width: 100%;
             }
-
             .right-top {
                 padding-top: 120px;
                 // res
-                @media #{$small-mobile}{
+                @media #{$small-mobile} {
                     padding-top: 0;
                 }
                 h2 {
@@ -86,14 +82,14 @@
     }
 }
 
-.onepage-contact-inner{
+.onepage-contact-inner {
     box-sizing: border-box;
     display: flex;
     // res
     @media #{$sm-layout} {
         display: block;
     }
-    .page-address-inner{
+    .page-address-inner {
         padding-top: 80px !important;
         padding-right: 70px !important;
         padding-bottom: 67px !important;
@@ -106,12 +102,11 @@
             padding-bottom: 53px !important;
             padding-left: 55px !important;
         }
-
         @media #{$sm-layout} {
             width: 100%;
         }
     }
-    .googlemap{
+    .googlemap {
         width: 50%;
         @media #{$sm-layout} {
             width: 100%;
@@ -120,19 +115,20 @@
 }
 
 // Landing Page
-.brook-professonal-design{
-    .thumbnail{
+.kubuni-professonal-design {
+    .thumbnail {
         margin-left: -81px;
     }
 }
-.brook-contagion-area{
-    .thumbnail{
+
+.kubuni-contagion-area {
+    .thumbnail {
         margin-left: -130px;
         // Responsive
-        @media #{$laptop-device, $lg-layout}{
+        @media #{$laptop-device, $lg-layout} {
             margin-left: 0px;
         }
-        @media #{$md-layout, $sm-layout}{
+        @media #{$md-layout, $sm-layout} {
             margin-left: 0px;
             text-align: center;
             margin-bottom: 30px;
@@ -140,17 +136,21 @@
     }
 }
 
+
 /*--- spinner animation ---*/
+
 .worldRotate {
     animation: worldRotate 20s linear infinite;
 }
 
+
 /*--- spinner keyframe ---*/
+
 @keyframes worldRotate {
-	0% { 	
-        transform: rotate(0deg) translateY(0px) rotate(-360deg); 
+    0% {
+        transform: rotate(0deg) translateY(0px) rotate(-360deg);
     }
-	100% { 
-        transform: rotate(0deg) translateX(0px) rotate(0deg); 
+    100% {
+        transform: rotate(0deg) translateX(0px) rotate(0deg);
     }
 }
