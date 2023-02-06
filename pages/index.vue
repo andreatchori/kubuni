@@ -5,7 +5,7 @@
       <div class="page-content ml--100 ml_lg--0 ml_md--0 ml_sm--0">
           <Hero />
           <!-- Start What We Do Area -->
-          <div class="kubuni-what-we-do-area vertical-what-do-area bg_image--49" :style="{ backgroundImage: `url('/img/bg/bg-image-49.jpg')` }">
+          <div class="kubuni-what-we-do-area vertical-what-do-area" :style="{ backgroundImage: `url('/img/bg/bg-what-to-do-area.jpg')` }">
               <div class="row">
                   <div class="col-lg-6 col-md-12 col-12">
                       <div class="creative-what-do-inner">
@@ -34,7 +34,7 @@
                                   <div class="icon-box text-left no-border bg-transparant">
                                       <div class="inner">
                                           <div class="icon">
-                                              <img src="/img/icon-box/home-vertical-menu-box-icon-image-01.png" alt="image">
+                                              <img src="/img/icon-box/eye--icon.png" alt="image">
                                           </div>
                                           <div class="content mt--35">
                                               <h5 class="heading heading-h5">Original Ideas</h5>
@@ -49,7 +49,7 @@
                                   <div class="icon-box text-left no-border bg-transparant">
                                       <div class="inner">
                                           <div class="icon">
-                                              <img src="/img/icon-box/home-vertical-menu-box-icon-image-02.png" alt="image">
+                                              <img src="/img/icon-box/chess--icon.png" alt="image">
                                           </div>
                                           <div class="content mt--35">
                                               <h5 class="heading heading-h5">Graphic designs</h5>
@@ -67,7 +67,7 @@
           <!-- End What We Do Area -->
 
           <!-- Start Creative People Area -->
-          <div class="creative-people-area bg_image--50 ptb--200 ptb-md--80 ptb-sm--80">
+          <div class="creative-people-area bg_image--50 ptb--200 ptb-md--80 ptb-sm--80" :style="{ backgroundImage: `url('/img/bg/bg-creative-people.jpg')` }">
               <div class="container">
                   <div class="row align-items-center">
                       <div class="col-lg-12">
@@ -145,7 +145,7 @@
           <!-- End Progress Charts Area -->
 
           <!-- Start Testimonial Area -->
-          <div class="kubuni-testimonial-area ptb--150 ptb-md--80 ptb-sm--80 bg_image--51" :style="{backgroundImage: `url('/img/bg/bg-image-51.jpg')`}">
+          <div class="kubuni-testimonial-area ptb--150 ptb-md--80 ptb-sm--80 bg_image--51" :style="{backgroundImage: `url('/img/bg/bg-testimonial.jpg')`}">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-12">
@@ -193,22 +193,22 @@
                       </div>
                   </div>
                   <div class="row">
-                      <div class="col-xl-3 col-lg-4 col-sm-6 move-up wow mt--30" v-for="blog in blogData.blogs.slice(3, 11)" :key="blog.id">
+                      <div class="col-xl-3 col-lg-4 col-sm-6 move-up wow mt--30" v-for="blog in blogData.blogs" :key="blog.id">
                           <div class="blog-grid">
                               <div class="post-thumb">
-                                  <n-link :to="`/blog/${blog.slug}`">
+                                  <n-link :to="'/'">
                                       <img :src="blog.image" :alt="blog.alt">
                                   </n-link>
                               </div>
                               <div class="post-content">
                                   <div class="post-inner">
                                       <h5 class="heading heading-h5">
-                                          <n-link :to="`/blog/${blog.slug}`">{{ blog.title }}</n-link>
+                                          <n-link :to="'/'">{{ blog.title }}</n-link>
                                       </h5>
                                       <div class="post-meta">
                                           <div class="post-date">{{ blog.date }}</div>
                                           <div class="post-category">
-                                              <n-link :to="`/blog/${blog.slug}`">{{ blog.category }}</n-link>
+                                              <n-link :to="'/'">{{ blog.category }}</n-link>
                                           </div>
                                       </div>
                                   </div>

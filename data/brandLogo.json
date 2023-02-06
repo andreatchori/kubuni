@@ -1,26 +1,25 @@
-[
-    {
+[{
         "id": 1,
-        "logo": "/img/testimonial/clint-2/client-logo-01.png"
+        "logo": "/img/client/social-1.png"
     },
     {
         "id": 2,
-        "logo": "/img/testimonial/clint-2/client-logo-02.png"
+        "logo": "/img/client/social-2.png"
     },
     {
         "id": 3,
-        "logo": "/img/testimonial/clint-2/client-logo-03.png"
+        "logo": "/img/client/social-3.png"
     },
     {
         "id": 4,
-        "logo": "/img/testimonial/clint-2/client-logo-04.png"
+        "logo": "/img/client/social-4.png"
     },
     {
         "id": 5,
-        "logo": "/img/testimonial/clint-2/client-logo-05.png"
+        "logo": "/img/client/social-5.png"
     },
     {
         "id": 6,
-        "logo": "/img/testimonial/clint-2/client-logo-06.png"
+        "logo": "/img/client/social-6.png"
     }
 ]
