@@ -1,5 +1,5 @@
 # Kubuni - Creative NuxtJS Template
-Kubuni is a versatile Vue Nuxt JS Template, which emphasizes creativity, efficiency, and diversity in site-building.
+Kubuni is a Vue Nuxt JS Template, which emphasizes creativity, efficiency, and diversity.
 Preview : https://incandescent-caramel-0741bb.netlify.app/
 ## Build Setup
 ```bash
