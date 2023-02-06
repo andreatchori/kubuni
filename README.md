@@ -1,7 +1,6 @@
-# Kubuni
-
+# Kubuni - Creative NuxtJS Template
+Kubuni is a versatile Vue Nuxt JS Template, which emphasizes creativity, efficiency, and diversity in site-building.
 ## Build Setup
-
 ```bash
 # install dependencies
 $ yarn install
