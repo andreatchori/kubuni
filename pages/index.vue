@@ -1,9 +1,9 @@
 <template>
 
   <div class="main-container">
-      <HeaderVertical/>
+      <Header/>
       <div class="page-content ml--100 ml_lg--0 ml_md--0 ml_sm--0">
-          <HeroVertical />
+          <Hero />
           <!-- Start What We Do Area -->
           <div class="kubuni-what-we-do-area vertical-what-do-area bg_image--49" :style="{ backgroundImage: `url('/img/bg/bg-image-49.jpg')` }">
               <div class="row">
@@ -34,7 +34,7 @@
                                   <div class="icon-box text-left no-border bg-transparant">
                                       <div class="inner">
                                           <div class="icon">
-                                              <img src="/img/service/icon-box/home-vertical-menu-box-icon-image-01.png" alt="image">
+                                              <img src="/img/icon-box/home-vertical-menu-box-icon-image-01.png" alt="image">
                                           </div>
                                           <div class="content mt--35">
                                               <h5 class="heading heading-h5">Original Ideas</h5>
@@ -49,7 +49,7 @@
                                   <div class="icon-box text-left no-border bg-transparant">
                                       <div class="inner">
                                           <div class="icon">
-                                              <img src="/img/service/icon-box/home-vertical-menu-box-icon-image-02.png" alt="image">
+                                              <img src="/img/icon-box/home-vertical-menu-box-icon-image-02.png" alt="image">
                                           </div>
                                           <div class="content mt--35">
                                               <h5 class="heading heading-h5">Graphic designs</h5>
@@ -254,8 +254,8 @@
   import blogData from '../data/blog.json'
   export default {
       components: {
-          HeaderVertical: () => import('@/components/HeaderVertical'),
-          HeroVertical: () => import('@/components/HeroVertical'),
+          Header: () => import('@/components/Header'),
+          Hero: () => import('@/components/Hero'),
           Testimonial: () => import('@/components/Testimonial'),
           BrandLogo: () => import('@/components/BrandLogo'),
           Footer: () => import('@/components/Footer'),
@@ -266,9 +266,6 @@
               blogData,
           }
       },
-      mounted () {
-            document.body.classList.add('template-color-15', 'template-font-1')
-        },
       head() {
           return {
               title: 'Kubuni - Creative Template'
